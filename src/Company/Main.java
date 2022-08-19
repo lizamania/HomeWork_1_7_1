@@ -7,11 +7,9 @@ public class Main {
         Warrior wr= new Warrior(450,44,"berserk");
         Medic medic=new Medic(333,11,"health");
         Hero[] heroes={gender,wr,medic};
-        for (Hero i:heroes) {
-            i.applySuperAbility();
-            for (int j = 0; j < heroes.length; j++) {
-                System.out.println(medic.increaseExperience()+"  "+j);
-            }
+        for (int i = 0; i < heroes.length; i++) {
+            System.out.println(medic.increaseExperience()+ " " +i);
+            heroes[i].applySuperAbility();
         }
     }
 }
