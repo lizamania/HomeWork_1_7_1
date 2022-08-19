@@ -1,2 +1,7 @@
-package Company;public interface HavingSuperAbility {
+package Company;
+
+public interface HavingSuperAbility {
+   void applySuperAbility();
+
+
 }
